@@ -4,7 +4,15 @@ export default function App() {
   return (
     <div className="App">
       <footer>
-        This project was coded by Candace Genesis and is{" "}
+        This project was coded by{" "}
+        <a
+          href="https://candacegenesis.myportfolio.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Candace Genesis
+        </a>{" "}
+        and is{" "}
         <a
           href="https://github.com/CanGene/react-weather-app"
           target="_blank"
