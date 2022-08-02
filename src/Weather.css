@@ -1,0 +1,9 @@
+.Weather {
+  border: 1px black solid;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+.Weather form {
+  margin: 0px 0px 25px;
+}
