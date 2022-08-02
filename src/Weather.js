@@ -23,7 +23,10 @@ export default function Weather() {
           <h2>23</h2>
         </div>
         <div className="col-4">
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
         </div>
         <div className="col-4">
           <h1>Coimbatore</h1>
@@ -53,44 +56,65 @@ export default function Weather() {
       <div className="row daily">
         <div className="col-2">
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
         <div className="col-2">
           {" "}
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
         <div className="col-2">
           {" "}
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
         <div className="col-2">
           {" "}
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
         <div className="col-2">
           {" "}
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
         <div className="col-2">
           {" "}
           <div>12:00 PM</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>24</div>
         </div>
       </div>
       <div className="row weekly">
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
@@ -98,7 +122,10 @@ export default function Weather() {
         </div>
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
@@ -106,7 +133,10 @@ export default function Weather() {
         </div>
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
@@ -114,7 +144,10 @@ export default function Weather() {
         </div>
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
@@ -122,7 +155,10 @@ export default function Weather() {
         </div>
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
@@ -130,7 +166,10 @@ export default function Weather() {
         </div>
         <div className="col-2">
           <div>Mon</div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+          />
           <div>
             24 <span>|</span>
             <span> 26</span>
