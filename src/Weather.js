@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
@@ -11,6 +12,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter your city!"
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-2">
@@ -19,6 +21,10 @@ export default function Weather() {
         </div>
       </form>
       <div className="row">
+        <div className="col-4 location">
+          <h1>Coimbatore</h1>
+          <h3>India</h3>
+        </div>
         <div className="col-4">
           <h2>23</h2>
         </div>
@@ -26,28 +32,24 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="now-icon"
           />
-        </div>
-        <div className="col-4">
-          <h1>Coimbatore</h1>
-          <h3>India</h3>
         </div>
       </div>
       <div className="row">
         <div className="col-4">
+          <span>Sunday</span> <span>11:00 AM</span>
+        </div>
+        <div className="col-4">
           <h4>°C/F</h4>
         </div>
         <div className="col-4">
-          <h5>Light Intensity Shower Rain</h5>
-        </div>
-        <div className="col-4">
-          <h6>Sunday</h6>
-          <div>11:00 AM</div>
+          <h5>Thunderstorm</h5>
         </div>
       </div>
       <div className="row today-info">
         <div className="col-4">Feels Like: 21°C</div>
-        <div className="col-4">Precipitation:--mm</div>
+        <div className="col-4">Precipitation: --mm</div>
         <div className="col-4">Humidity: 79%</div>
         <div className="col-4">Pressure: 1015hPa</div>
         <div className="col-4">Wind: 4.63 m/s</div>
@@ -59,6 +61,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -68,6 +71,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -77,6 +81,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -86,6 +91,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -95,6 +101,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -104,6 +111,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>24</div>
         </div>
@@ -114,6 +122,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
@@ -125,6 +134,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
@@ -136,6 +146,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
@@ -147,6 +158,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
@@ -158,6 +170,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
@@ -169,6 +182,7 @@ export default function Weather() {
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
+            className="future-icon"
           />
           <div>
             24 <span>|</span>
