@@ -7,7 +7,7 @@ export default function Weather() {
     <div className="Weather">
       <form>
         <div className="row">
-          <div className="col-10">
+          <div className="col-sm-10">
             <input
               type="search"
               placeholder="Enter your city!"
@@ -15,48 +15,49 @@ export default function Weather() {
               autoFocus="on"
             />
           </div>
-          <div className="col-2">
+          <div className="col-sm-2">
             <input type="submit" value="Search" className="btn btn-dark" />
           </div>
         </div>
       </form>
       <div className="row">
-        <div className="col-4 location">
-          <h1>Coimbatore</h1>
-          <h3>India</h3>
-        </div>
-        <div className="col-4">
+        <div className="col-sm-4">
           <h2>23</h2>
         </div>
-        <div className="col-4">
+        <div className="col-sm-4">
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
             className="now-icon"
           />
         </div>
+        <div className="col-sm-4 location">
+          <h1>Coimbatore</h1>
+          <h3>India</h3>
+        </div>
       </div>
       <div className="row">
-        <div className="col-4">
-          <span>Sunday</span> <span>11:00 AM</span>
-        </div>
-        <div className="col-4">
+        <div className="col-sm-4">
           <h4>°C/F</h4>
         </div>
-        <div className="col-4">
+
+        <div className="col-sm-4">
           <h5>Thunderstorm</h5>
+        </div>
+        <div className="col-sm-4">
+          <span>Sunday</span> <span>11:00 AM</span>
         </div>
       </div>
       <div className="row today-info">
-        <div className="col-4">Feels Like: 21°C</div>
-        <div className="col-4">Precipitation: --mm</div>
-        <div className="col-4">Humidity: 79%</div>
-        <div className="col-4">Pressure: 1015hPa</div>
-        <div className="col-4">Wind: 4.63 m/s</div>
-        <div className="col-4">UVI: 3.19</div>
+        <div className="col-sm-4">Feels Like: 21°C</div>
+        <div className="col-sm-4">Precipitation: --mm</div>
+        <div className="col-sm-4">Humidity: 79%</div>
+        <div className="col-sm-4">Pressure: 1015hPa</div>
+        <div className="col-sm-4">Wind: 4.63 m/s</div>
+        <div className="col-sm-4">UVI: 3.19</div>
       </div>
       <div className="row daily">
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>12:00 PM</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -65,7 +66,7 @@ export default function Weather() {
           />
           <div>24</div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           {" "}
           <div>12:00 PM</div>
           <img
@@ -75,7 +76,7 @@ export default function Weather() {
           />
           <div>24</div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           {" "}
           <div>12:00 PM</div>
           <img
@@ -85,7 +86,7 @@ export default function Weather() {
           />
           <div>24</div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           {" "}
           <div>12:00 PM</div>
           <img
@@ -95,7 +96,7 @@ export default function Weather() {
           />
           <div>24</div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           {" "}
           <div>12:00 PM</div>
           <img
@@ -105,7 +106,7 @@ export default function Weather() {
           />
           <div>24</div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           {" "}
           <div>12:00 PM</div>
           <img
@@ -117,7 +118,7 @@ export default function Weather() {
         </div>
       </div>
       <div className="row weekly">
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -129,7 +130,7 @@ export default function Weather() {
             <span> 26</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -141,7 +142,7 @@ export default function Weather() {
             <span> 26</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -153,7 +154,7 @@ export default function Weather() {
             <span> 26</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -165,7 +166,7 @@ export default function Weather() {
             <span> 26</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -177,7 +178,7 @@ export default function Weather() {
             <span> 26</span>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <div>Mon</div>
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
