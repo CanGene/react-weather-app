@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
+    console.log(response);
     setWeatherData({
       ready: true,
-      temperature: response.data.current.temp,
-      wind: response.current.wind_speed,
-      uv: response.current.uvi,
-      feelsLike: response.current.feels_like,
-      pressure: response.current.pressure,
-      humidity: response.current.humidity,
-      description: response.weather.description,
+      temperature: Math.round(response.data.main.temp),
+      wind: response.data.wind.speed,
+      uv: response.data.main.uvi,
+      feelsLike: response.data.main.feels_like,
+      pressure: response.data.main.pressure,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -32,13 +34,13 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-sm-2">
-              <input type="submit" value="Search" className="btn btn-dark" />
+              <input type="submit" value="Search" className="btn btn-light" />
             </div>
           </div>
         </form>
         <div className="row">
           <div className="col-sm-4">
-            <h2>23</h2>
+            <h2>{weatherData.temperature}</h2>
           </div>
           <div className="col-sm-4">
             <img
@@ -61,16 +63,16 @@ export default function Weather(props) {
             <h5 className="text-capitalize">{weatherData.description}</h5>
           </div>
           <div className="col-sm-4">
-            <span>Sunday</span> <span>11:00 AM</span>
+            <div>
+              <FormattedDate date={weatherData.date} />
+            </div>
           </div>
         </div>
         <div className="row today-info">
-          <div className="col-sm-4">Feels Like: {weatherData.feelsLike}°C</div>
-          <div className="col-sm-4">Precipitation: --mm</div>
-          <div className="col-sm-4">Humidity: {weatherData.humidity}%</div>
-          <div className="col-sm-4">Pressure: {weatherData.pressure}hPa</div>
-          <div className="col-sm-4">Wind: {weatherData.wind} m/s</div>
-          <div className="col-sm-4">UVI: {weatherData.uv}</div>
+          <div className="col-sm-6">Feels Like: {weatherData.feelsLike} °C</div>
+          <div className="col-sm-6">Humidity: {weatherData.humidity}%</div>
+          <div className="col-sm-6">Wind: {weatherData.wind} m/s</div>
+          <div className="col-sm-6">UVI: {weatherData.uv}</div>
         </div>
         <div className="row daily">
           <div className="col-sm-2">
@@ -211,9 +213,9 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "0a38a4c0fc331c733185ab6f04395470";
-    let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+    let city = "Chennai";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-
     return "Loading...";
   }
 }
