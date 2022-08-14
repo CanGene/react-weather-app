@@ -21,6 +21,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       country: response.data.sys.country,
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -41,20 +42,15 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-sm-10">
-              <input
-                type="search"
-                placeholder="Enter your city!"
-                className="form-control"
-                autoFocus="on"
-                onChange={handleCityChange}
-              />
-            </div>
-            <div className="col-sm-2">
-              <input type="submit" value="Search" className="btn btn-light" />
-            </div>
-          </div>
+          <input
+            type="search"
+            placeholder="Enter your city!"
+            className="form-control"
+            autoFocus="on"
+            onChange={handleCityChange}
+          />
+
+          <input type="submit" value="Search" className="btn btn-light" />
         </form>
         <WeatherInfo data={weatherData} />
       </div>

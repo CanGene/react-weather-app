@@ -1,66 +1,68 @@
 .Weather {
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
-  border: 1px solid
-    linear-gradient(
-      109.6deg,
-      rgb(232, 252, 252) 11.2%,
-      rgb(252, 215, 134) 56.2%,
-      rgb(247, 124, 124) 100.2%
-    );
+  border: 1px solid #121212;
+}
+.Weather:hover {
+  transition: all 500ms ease-in-out;
+  border: 1px solid rgb(236, 110, 75);
+  color: #121212;
+  background-color: white;
+}
+.Weather form {
+  margin: 10px auto;
+}
+.Weather .btn {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: 20px auto;
+  float: right;
+
+  border: 1px solid #121212;
+  color: #121212;
   background: linear-gradient(
     109.6deg,
-    rgb(232, 252, 252) 11.2%,
+    rgb(232, 252, 252) 20%,
     rgb(252, 215, 134) 56.2%,
-    rgb(247, 124, 124) 100.2%
+    rgb(236, 110, 75) 100.2%
   );
 }
+.Weather .btn:hover {
+  background-color: white;
+}
 .Weather .temperature {
-  font-size: 90px;
+  font-size: 80px;
+}
+.Weather .units {
+  position: relative;
+  top: -30px;
+  margin-left: 10px;
+}
+.Weather .now-icon {
+  min-height: 100px;
+  position: relative;
+  top: -20px;
+}
+.Weather .weather-now {
+  margin: 0 auto;
+  padding: 0;
 }
 .Weather .location {
-  padding: 32px;
+  margin: 5px 0px;
 }
 .Weather .cityName {
   font-size: 28px;
 }
-.Weather .country {
+.Weather .countryName {
   font-size: 26px;
 }
 .Weather .description {
   font-size: 24px;
 }
-.Weather .date {
-  font-size: 18px;
-}
-.Weather .now-icon {
-  padding: 20px;
-  min-height: 145px;
-}
-.Weather .future-icon {
-  padding: 20px;
-  max-height: 120px;
-}
-.Weather form {
-  margin-bottom: 25px;
-}
-.Weather .btn {
-  padding-left: 35px;
-  padding-right: 35px;
-  background: linear-gradient(
-    109.6deg,
-    rgb(232, 252, 252) 11.2%,
-    rgb(252, 215, 134) 56.2%,
-    rgb(247, 124, 124) 100.2%
-  );
-}
 .Weather .today-info {
-  margin: 25px auto;
+  font-size: 18px;
+  margin: 10px 0px;
 }
-.Weather .daily {
-  margin: 60px auto;
-}
-.Weather .weekly {
-  margin: 50px auto;
+.Weather .date {
+  font-size: 8px;
 }

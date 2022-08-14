@@ -1,11 +1,18 @@
+.App {
+  background: linear-gradient(
+    109.6deg,
+    rgb(232, 252, 252) 20%,
+    rgb(252, 215, 134) 56.2%,
+    rgb(236, 110, 75) 100.2%
+  );
+}
 .App .container {
   margin: 0 auto;
-  text-align: center;
-  max-width: 950px;
+  max-width: 700px;
   padding: 40px;
 }
 .App footer {
-  font-size: 12px;
+  font-size: 6px;
   margin-top: 15px;
 }
 .App a {
