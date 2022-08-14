@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Christmas Island" />
         <footer>
           This project was coded by{" "}
           <a
@@ -13,9 +13,9 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Candace Genesis
+            Candace Genesis.
           </a>{" "}
-          and is{" "}
+          It is{" "}
           <a
             href="https://github.com/CanGene/react-weather-app"
             target="_blank"
@@ -23,7 +23,14 @@ export default function App() {
           >
             open-sourced
           </a>{" "}
-          on GitHub.
+          on GitHub and{" "}
+          <a
+            href="https://62eb120081bda7147b52eedd--tranquil-souffle-969cea.netlify.app/?"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify.
+          </a>
         </footer>
       </div>
     </div>
