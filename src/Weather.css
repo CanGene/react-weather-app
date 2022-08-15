@@ -4,10 +4,13 @@
   border: 1px solid #121212;
 }
 .Weather:hover {
-  transition: all 500ms ease-in-out;
-  border: 1px solid rgb(236, 110, 75);
-  color: #121212;
-  background-color: white;
+  transition: all 300ms ease-in-out;
+  background: linear-gradient(
+    300.6deg,
+    rgb(232, 252, 252) 20%,
+    rgb(252, 215, 134) 56.2%,
+    rgb(236, 110, 75) 100.2%
+  );
 }
 .Weather form {
   margin: 10px auto;

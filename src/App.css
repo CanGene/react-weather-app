@@ -1,10 +1,5 @@
 .App {
-  background: linear-gradient(
-    109.6deg,
-    rgb(232, 252, 252) 20%,
-    rgb(252, 215, 134) 56.2%,
-    rgb(236, 110, 75) 100.2%
-  );
+  height: 100vh;
 }
 .App .container {
   margin: 0 auto;
