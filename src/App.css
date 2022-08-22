@@ -1,5 +1,10 @@
 .App {
   height: 100vh;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(246, 133, 133) 16.3%,
+    rgb(172, 131, 241) 90%
+  );
 }
 .App .container {
   margin: 0 auto;
@@ -7,11 +12,11 @@
   padding: 40px;
 }
 .App footer {
-  font-size: 6px;
-  margin-top: 15px;
+  font-size: 12px;
+  margin-top: 25px;
 }
 .App a {
-  color: #ec6e4b;
+  color: rgb(246, 232, 244);
 }
 .App a:hover {
   color: #000000;

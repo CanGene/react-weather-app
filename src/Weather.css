@@ -1,40 +1,35 @@
 .Weather {
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #121212;
-}
-.Weather:hover {
-  transition: all 300ms ease-in-out;
-  background: linear-gradient(
-    300.6deg,
-    rgb(232, 252, 252) 20%,
-    rgb(252, 215, 134) 56.2%,
-    rgb(236, 110, 75) 100.2%
-  );
+  background-color: rgb(202, 178, 242);
+  border: 1px solid rgb(246, 232, 244);
+  box-shadow: 10px 10px 15px rgba(118, 93, 155, 0.6);
 }
 .Weather form {
   margin: 10px auto;
+  box-shadow: 10px 10px 10px rgba(140, 125, 164, 0.6);
 }
 .Weather .btn {
   padding-left: 35px;
   padding-right: 35px;
   margin: 20px auto;
   float: right;
-
-  border: 1px solid #121212;
-  color: #121212;
-  background: linear-gradient(
-    109.6deg,
-    rgb(232, 252, 252) 20%,
-    rgb(252, 215, 134) 56.2%,
-    rgb(236, 110, 75) 100.2%
+  border: 1px solid rgb(246, 232, 244);
+  color: rgb(246, 232, 244);
+  box-shadow: 5px 5px 5px rgba(140, 125, 164, 0.6);
+  background: radial-gradient(
+    circle at 80%,
+    #f68585 16.3%,
+    rgb(172, 131, 241) 90%
   );
 }
 .Weather .btn:hover {
-  background-color: white;
+  border: 1px solid rgb(60, 46, 84);
+  color: rgb(60, 46, 84);
 }
 .Weather .temperature {
   font-size: 80px;
+  color: rgb(60, 46, 84);
 }
 .Weather .units {
   position: relative;
@@ -46,26 +41,32 @@
   position: relative;
   top: -20px;
 }
-.Weather .weather-now {
-  margin: 0 auto;
-  padding: 0;
-}
+
 .Weather .location {
   margin: 5px 0px;
+  font-weight: 600;
+  color: rgb(60, 46, 84);
 }
 .Weather .cityName {
   font-size: 28px;
 }
 .Weather .countryName {
-  font-size: 26px;
+  font-size: 28px;
 }
 .Weather .description {
   font-size: 24px;
+  font-weight: 600;
+  color: rgb(125, 95, 179);
 }
 .Weather .today-info {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0px;
+  color: rgb(86, 70, 112);
 }
 .Weather .date {
-  font-size: 8px;
+  font-size: 14px;
+  color: rgb(140, 125, 164);
+}
+.Weather a {
+  color: rgb(246, 232, 244);
 }
