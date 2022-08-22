@@ -3,11 +3,11 @@
   border-radius: 10px;
   background-color: rgb(202, 178, 242);
   border: 1px solid rgb(246, 232, 244);
-  box-shadow: 10px 10px 15px rgba(118, 93, 155, 0.6);
+  box-shadow: 10px 10px 15px rgba(110, 88, 146, 0.6);
 }
 .Weather form {
   margin: 10px auto;
-  box-shadow: 10px 10px 10px rgba(140, 125, 164, 0.6);
+  box-shadow: 10px 10px 15px rgba(140, 125, 164, 0.6);
 }
 .Weather .btn {
   padding-left: 35px;
@@ -19,7 +19,7 @@
   box-shadow: 5px 5px 5px rgba(140, 125, 164, 0.6);
   background: radial-gradient(
     circle at 80%,
-    #f68585 16.3%,
+    rgb(246, 133, 133) 16.3%,
     rgb(172, 131, 241) 90%
   );
 }
