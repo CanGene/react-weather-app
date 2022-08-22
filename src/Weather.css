@@ -1,9 +1,14 @@
 .Weather {
   padding: 20px;
   border-radius: 10px;
+<<<<<<< HEAD
   background-color: rgb(202, 178, 242);
   border: 1px solid rgb(246, 232, 244);
   box-shadow: 10px 10px 15px rgba(118, 93, 155, 0.6);
+=======
+  border: 1px solid rgb(246, 232, 244);
+  background-color: rgb(202, 178, 242);
+>>>>>>> d5eb930781213c8f10138014125214eeb274402d
 }
 .Weather form {
   margin: 10px auto;
@@ -15,11 +20,18 @@
   margin: 20px auto;
   float: right;
   border: 1px solid rgb(246, 232, 244);
+<<<<<<< HEAD
   color: rgb(246, 232, 244);
   box-shadow: 5px 5px 5px rgba(140, 125, 164, 0.6);
   background: radial-gradient(
     circle at 80%,
     #f68585 16.3%,
+=======
+  color: #121212;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(246, 133, 133) 16.3%,
+>>>>>>> d5eb930781213c8f10138014125214eeb274402d
     rgb(172, 131, 241) 90%
   );
 }
@@ -54,9 +66,13 @@
   font-size: 28px;
 }
 .Weather .description {
+<<<<<<< HEAD
   font-size: 24px;
   font-weight: 600;
   color: rgb(125, 95, 179);
+=======
+  font-size: 26px;
+>>>>>>> d5eb930781213c8f10138014125214eeb274402d
 }
 .Weather .today-info {
   font-size: 16px;
@@ -64,8 +80,13 @@
   color: rgb(86, 70, 112);
 }
 .Weather .date {
+<<<<<<< HEAD
   font-size: 14px;
   color: rgb(140, 125, 164);
+=======
+  font-size: 8px;
+  color: rgb(76, 68, 90);
+>>>>>>> d5eb930781213c8f10138014125214eeb274402d
 }
 .Weather a {
   color: rgb(246, 232, 244);
