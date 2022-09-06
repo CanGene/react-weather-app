@@ -18,6 +18,7 @@
 }
 .WeatherForecastTempMin {
   color: rgb(125, 95, 179);
+  font-weight: 600;
 }
 .WeatherForecast img {
   padding: 0;
