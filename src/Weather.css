@@ -33,7 +33,7 @@
 }
 .Weather .units {
   position: relative;
-  top: -30px;
+  top: -45px;
   margin-left: 10px;
 }
 .Weather .now-icon {
@@ -64,8 +64,8 @@
   color: rgb(86, 70, 112);
 }
 .Weather .date {
-  font-size: 14px;
-  color: rgb(140, 125, 164);
+  font-size: 10px;
+  color: rgb(120, 108, 140);
 }
 .Weather a {
   color: rgb(246, 232, 244);
