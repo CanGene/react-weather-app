@@ -23,4 +23,5 @@
 .WeatherForecast img {
   padding: 0;
   margin: -10px auto;
+  max-height: 80px;
 }
